@@ -1,0 +1,11 @@
+Features :
+
+CSS Grid Site:
+Mobile responsive pages
+W/ css animation : Bounce and Fade in (Resource : https://www.tutorialspoint.com/css/css_animation.htm)
+w/themes light/dark
+w/lightbox
+w/video
+
+Reference site(Burgerlounge.com)
+

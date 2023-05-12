@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="dark">
+    <header class="header">        
+        <h1>Burger Planet</h1>
+        <nav class="navbar">
+            <a href="index.html" >Home</a>                            
+            <a href="order.html" >OrderNow</a>                  
+            <a href="menu.html">Menu</a>
+            <a href="about.html" >About</a> 
+            <a href="contact.html">Contact</a>
+            <button id="themeBtn" type="button" onclick="ToggleTheme();" title="Set Theme">Lite Mode</button>
+        </nav>
+       
+        <form method="post" action="" class="search-form">
+            <input type="search" placeholder="search here..." name="" id="search-box">    
+            <label for="search-box" class="fas-fa-search"></label>
+        </form>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="bureger"></a>
+
+
+    </header>
+    <main id="order-container">
+        <div id="grid-order">
+            <div class="order-left">
+                <img src="assets/images/orderbg1.jpg" class="order-background fadeIn" onclick="myFunction();" alt="Burger  image" width="600" height="500">
+            </div>  
+    
+        <div class="order-right" id="submit">   
+            <h3>Order Now</h3>
+            <table>
+                <tr>
+                    <td> <label for="type">Type:</label></td>
+                    <td><select name="myorder" id="myorder" placeholder="type of order" width="100%" required>
+                        <option value="select" id="select">--select--</option>
+                        <option value="pick-up" id="pickup">Pickup</option>
+                        <option value="delivery" id="Delivery">Delivery</option>
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td><label for="when">When:</label></td>
+                    <td><input type="time" name="time" id="time" placeholder="time" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="location">Location:</label></td>
+                    <td><input type="text" placeholder="Address,City and State or Postalcode" name="location" id="location"   required></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Phone:</label></td>
+                    <td><input type="text" placeholder="Phone..." name="" id="phone" required></td>
+                </tr>
+                <tr>
+                    <td><input id="orderSubmit" type="button" value="submit" class="submit" onclick="submit();"></td>
+                    <td><input type="reset" class="submit" value="Reset" /></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+        
+    <footer>
+        <div class="footer-link">
+    
+                <section>
+                    <nav>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">ContactUs</a> 
+                        <a href="#delivery">DeliveryPolicy</a>
+                        <a href="#location">Locations</a>
+                    </nav>
+                </section>
+            
+                <div class="copy">
+                    Copyright &copy;2022 Mariya Sunny
+                </div>               
+            
+        </div>
+    </footer>
+    <script src="js/app.js">
+
+    </script> 
+</body>
+
+</html>

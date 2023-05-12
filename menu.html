@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="dark">
+    <header class="header">        
+        <h1>Burger Planet</h1>
+        <nav class="navbar">
+            <a href="index.html" >Home</a>                            
+            <a href="order.html" >OrderNow</a>                  
+            <a href="menu.html">Menu</a>
+            <a href="about.html" >About</a> 
+            <a href="contact.html">Contact</a>
+            <button id="themeBtn" type="button" onclick="ToggleTheme();" title="Set Theme">Lite Mode</button>
+        </nav>
+        
+        <form method="post" action="" class="search-form">
+            <input type="search" placeholder="search here..." name="" id="search-box">    
+            <label for="search-box" class="fas-fa-search"></label>
+            </form>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="bureger"></a>
+
+
+    </header>
+<main id="order-container">
+  <div id="grid-menu">
+    <div class="menu-left">
+
+        <img src="assets/images/lounge-burger.png" width="200" height="200" alt="Lounge burger" class="lightbox-image">
+        <h3>Lounge burger</h3>
+        <p>Grass-Fed Beef, Cheddar Cheese, Lettuce, Tomato, Onion, Pickles, BL 1000 Island.</p>
+        
+        <img src="assets/images/the-husky.png" width="200" height="200" alt="The Husky" class="lightbox-image">
+        <h3>The Husky</h3>
+        <p>Grass-Fed Beef, American Cheese, Lettuce, Tomato, Onion, Pickles, BL 1000 Island</p>
+        <img src="assets/images/crispy-buffalo-chicken.png" width="200" height="200" alt="Crispy buffalo Chicken" class="lightbox-image">
+        <h3>Crispy buffalo Chicken</h3>
+        <p>Crispy Chicken Breast, Buffalo Sauce, Pickles, Blue Cheese Drizzle</p>
+       
+        <h2> Sides</h2>
+        <img src="assets/images/fresh-cut-french-fries.png" width="200" height="200" alt="Fresh-cut French Fries" class="lightbox-image">
+        <h3>Fresh-cut French Fries</h3>
+        <p>Crispy Belgian Style, Fried in 100% GMO-Free Rice Bran Oil</p>
+        <img src="assets/images/onion-rings.png" width="200" height="200" alt="Onion Rings" class="lightbox-image">
+        <h3>Onion Rings</h3>
+        <p>Light & Crispy, Fried in 100% GMO-Free Rice Bran Oil</p>
+      
+     </div>   
+        
+     <div class="menu-middle">
+
+        <img src="assets/images/bbq-wrangler-burger.png" width="200" height="200" alt="Bacon BBQ Wrangler Burger" class="lightbox-image">
+        <h3>Bacon BBQ Wrangler Burger</h3>
+        <p>100% Grass-fed American Beef, Cheddar, Onion Rings, Bacon,
+             BBQ Sauce, Mayonnaise.
+            Available for a limited time</p>
+
+        <img src="assets/images/bison-bleu-burger.png" width="200" height="200" alt="BISON BLEU BURGER" class="lightbox-image">
+        <h3>Bison Bleu Burger</h3>
+        <p>Grass-fed bison, creamy gorgonzola, pickled red onion, arugula, chipotle aioli.
+        For a limited time.</p>
+
+        <img src="assets/images/grilled-cod.png" width="200" height="200" alt="GRILLED COD SANDWICH" class="lightbox-image">
+        <h3>Grilled Cod Sandwich</h3>
+        <p>Grilled Cod Fillet, Lettuce, Tomato, BL Tartar</p>
+        
+        <h2> Salads</h2>
+
+        <img src="assets/images/nice-little-side-salad-v2.png" width="200" height="200" alt="Nice little side salad" class="lightbox-image">
+        <h3>Nice little side salad</h3>
+        <p>Grilled Cod Fillet, Lettuce, Tomato, BL Tartar</p>        <img src="images/seasonal-harvest-salad.png" width="200" height="200" alt="Daily green salad" class="lightbox-image">
+        <h3>Daily green salad</h3>
+        <p>Romaine, Kale, Grape Tomatoes, Red Onion, Shredded Carrots, Ricotta Salad Crumble, Lemon-Basil Vinaigrette</p>
+     </div>   
+     <div class="menu-right">
+
+        <img src="assets/images/turkey-burger.png" width="200" height="200" alt="TURKEY BURGER" class="lightbox-image">
+        <h3>Turkey Burger</h3>
+        <p>Turkey with Lots of Fresh Basil, Cheddar Cheese, Lettuce, Tomato, Onion, Pickles, BL 1000</p>
+
+        <img src="assets/images/crispy-chicken-sandwich.png" width="200" height="200" alt="CRISPY CHICKEN SANDWICH" class="lightbox-image">
+        <h3>Crispy Chicken Sandwich</h3>
+        <p>Crispy Chicken Breast, Lettuce, Pickles, BL Herb Mayonnaise</p>
+
+        <img src="assets/images/ancient-grain-burger.png" width="200" height="200" alt="Ancient Grain Burger" class="lightbox-image">
+        <h3>Ancient Grain Burger</h3>
+        <p>Quinoa / Veggie Patty, Choice of Cheddar Cheese or Vegan Cheddar, Lettuce, Tomato, Onion, Pickles, BL 1000</p>
+        
+        <h2>Paleo</h2>
+
+        <img src="assets/images/the-paleo.png" width="200" height="200" alt="Paleo Burger" class="lightbox-image">
+        <h3>Paleo Burger </h3>
+        <p>Grass-Fed Beef, Bacon, Grilled Zucchini, Grilled Tomato, Avocado, Daikon Sprouts (no bun)</p>
+
+        <img src="assets/images/ancient-grain-paleo.jpg" width="200" height="200" alt="Ancient Grain Paleo" class="lightbox-image">
+        <h3>Ancient Grain Paleo</h3>
+        <p>BL Ancient Grain patties, Grilled Zucchini, Grilled Tomato, Avocado, Daikon Sprouts (no bun)</p>
+
+     </div>   
+     <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxContent">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <script src="js/app.js">
+        
+    </script>
+    </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer-link">
+       
+                <section>
+                    <nav>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">ContactUs</a> 
+                        <a href="#delivery">DeliveryPolicy</a>
+                        <a href="#location">Locations</a>
+                    </nav>
+                </section>
+               
+                <div class="copy">
+                    Copyright &copy;2022 Mariya Sunny
+                </div>.footer-lin               
+               
+        </div>
+    </footer>
+        
+</body>
+
+</html>
